@@ -1,0 +1,60 @@
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Background color for the entire page */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Makes the page take up the full viewport height */
+}
+
+/* Header styles with animation */
+h1 {
+    color: #333; /* Header text color */
+    font-size: 36px; /* Bigger font size */
+    text-align: center; /* Center-align the text */
+    animation: bounce 2s ease infinite; /* Fun bounce animation */
+}
+
+/* Button styles with animation */
+button {
+    background-color: #ff6b6b; /* Fun pink background color */
+    color: #fff; /* Button text color */
+    margin: 10px;
+    padding: 15px 30px; /* Bigger buttons */
+    font-size: 18px; /* Larger font size */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Added transform for fun animation */
+    border-radius: 10px; /* Rounded corners */
+}
+
+button:hover {
+    background-color: #ff3b3b; /* Darker pink background color on hover */
+    transform: scale(1.1); /* Fun scale animation on hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Drop shadow effect on hover */
+}
+
+/* Result styles with colorful text */
+#result {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 24px; /* Larger font size */
+    color: #ff6b6b; /* Fun pink text color */
+    text-align: center; /* Center-align the text */
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
