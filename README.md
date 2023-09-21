@@ -6,3 +6,5 @@
   * CSS file & Javascript file (linked to the index.html page)
 * one dynamic (two buttons working with AJAX)  
   NB: each button provide a different attributes so that the result will cahange based on the button you press.
+
+**To see the webserver page go to: _[this website](http://localhost:3000/)_**
