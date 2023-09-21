@@ -10,7 +10,7 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'index.html')); // Send the HTML file
 });
 
-// Define your dynamic endpoint and use a separate function
+// Dynamic endpoint
 app.get('/api/your_endpoint', (req, res) => {
     // Handle the request and generate a JSON response based on the argument
     const argument = req.query.argument; // Get the argument from the query parameters
@@ -21,7 +21,7 @@ app.get('/api/your_endpoint', (req, res) => {
     res.json(jsonResponse);
 });
 
-// Your separate function
+// Function that generate a response
 function generateResponse(argument) {
     let response;
     switch (argument) {
